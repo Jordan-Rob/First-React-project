@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./index.css";
 
 class Board extends Component {
   constructor() {
@@ -15,16 +16,12 @@ class Board extends Component {
   render() {
     return (
       <div>
-        <div className="card" style={{ width: 300 }}>
+        <div className="card shadow  mb-3 rounded" style={{ width: 300 }}>
           <div className="card-body">
-            <h5 className="card-title">Special title treatment</h5>
-            <p className="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
+            <h5 className="card-title text-center">The Quantity Of Butter</h5>
+            <p className="card-text text-center">{this.state.butterQuatity}</p>
+            <button className="butterButton1">Update Quantity</button>
+            <button className="butterButton2">Delete Value</button>
           </div>
         </div>
       </div>
