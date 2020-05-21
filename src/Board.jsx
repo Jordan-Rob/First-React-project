@@ -51,6 +51,42 @@ class Board extends Component {
     });
   };
 
+  laysQty = () => {
+    this.setState({
+      lays: this.state.lays + 1,
+    });
+  };
+
+  deleteLaysQty = () => {
+    this.setState({
+      lays: (this.state.lays = 0),
+    });
+  };
+
+  pringlesQty = () => {
+    this.setState({
+      pringles: this.state.pringles + 1,
+    });
+  };
+
+  deletePringlesQty = () => {
+    this.setState({
+      pringles: (this.state.pringles = 0),
+    });
+  };
+
+  doritosQty = () => {
+    this.setState({
+      doritos: this.state.doritos + 1,
+    });
+  };
+
+  deleteDoritosQty = () => {
+    this.setState({
+      doritos: (this.state.doritos = 0),
+    });
+  };
+
   render() {
     return (
       <div>
@@ -129,8 +165,15 @@ class Board extends Component {
                 <div className="card-body">
                   <h5 className="card-title text-center">lays</h5>
                   <p className="card-text text-center">{this.state.lays}</p>
-                  <button className="butterButton1">Update Quantity</button>
-                  <button className="butterButton2">Delete Value</button>
+                  <button onClick={this.laysQty} className="butterButton1">
+                    Update Quantity
+                  </button>
+                  <button
+                    onClick={this.deleteLaysQty}
+                    className="butterButton2"
+                  >
+                    Delete Value
+                  </button>
                 </div>
               </div>
             </div>
@@ -139,8 +182,15 @@ class Board extends Component {
                 <div className="card-body">
                   <h5 className="card-title text-center">pringles</h5>
                   <p className="card-text text-center">{this.state.pringles}</p>
-                  <button className="butterButton1">Update Price</button>
-                  <button className="butterButton2">Delete Value</button>
+                  <button onClick={this.pringlesQty} className="butterButton1">
+                    Update Price
+                  </button>
+                  <button
+                    onClick={this.deletePringlesQty}
+                    className="butterButton2"
+                  >
+                    Delete Value
+                  </button>
                 </div>
               </div>
             </div>
@@ -149,8 +199,15 @@ class Board extends Component {
                 <div className="card-body">
                   <h5 className="card-title text-center">doritos</h5>
                   <p className="card-text text-center">{this.state.doritos}</p>
-                  <button className="butterButton1">Update Crates</button>
-                  <button className="butterButton2">Delete Value</button>
+                  <button onClick={this.doritosQty} className="butterButton1">
+                    Update Crates
+                  </button>
+                  <button
+                    onClick={this.deleteDoritosQty}
+                    className="butterButton2"
+                  >
+                    Delete Value
+                  </button>
                 </div>
               </div>
             </div>
