@@ -96,7 +96,10 @@ class Board extends Component {
       <div>
         <div className="container">
           <div className="row">
-            <div className="col col-sm-4">
+            <div
+              className="col col-sm-4"
+              style={{ backgroundColor: mainTheme.backgroundMode }}
+            >
               <div
                 className="card shadow  mb-3 rounded"
                 style={{ width: 300, height: 300 }}
