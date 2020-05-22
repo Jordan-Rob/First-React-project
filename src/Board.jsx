@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./index.css";
+import { BoardContext } from "./BoardContext";
+
 class Board extends Component {
   constructor() {
     super();
@@ -88,6 +90,8 @@ class Board extends Component {
   };
 
   render() {
+    const { brightTheme, lightMode, darkMode } = this.context;
+    const mainTheme = brightTheme ? lightMode : darkMode;
     return (
       <div>
         <div className="container">
@@ -260,5 +264,7 @@ class Board extends Component {
       </div>
     );
   }
+
+  static contextType = BoardContext;
 }
 export default Board;
