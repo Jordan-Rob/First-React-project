@@ -9,13 +9,14 @@ class BoardContextProvider extends Component {
       brightTheme: true,
       lightMode: {
         fontColor: "#5c5c5c",
-        backgroundMode: "#dbdbdb",
-        buttonMode: "#a3a3a3",
+        backgroundMode: "#f5f7fa",
+        buttonMode: "#2892d7",
       },
       darkMode: {
-        fontColor: "#dbdbdb",
-        backgroundMode: "#5c5c5c",
-        buttonMode: "#5c5858",
+        fontColor: "#FF944A",
+        backgroundMode: "#03081D",
+        cardbackgroundMode: "#232C3E",
+        buttonMode: "#FF944A",
       },
     };
   }

@@ -94,15 +94,20 @@ class Board extends Component {
     const mainTheme = brightTheme ? lightMode : darkMode;
     return (
       <div>
-        <div className="container">
+        <div
+          className="container"
+          style={{ backgroundColor: mainTheme.backgroundMode }}
+        >
           <div className="row">
-            <div
-              className="col col-sm-4"
-              style={{ backgroundColor: mainTheme.backgroundMode }}
-            >
+            <div className="col col-sm-4">
               <div
                 className="card shadow  mb-3 rounded"
-                style={{ width: 300, height: 300 }}
+                style={{
+                  width: 300,
+                  height: 300,
+                  backgroundColor: mainTheme.cardbackgroundMode,
+                  color: mainTheme.fontColor,
+                }}
               >
                 <div className="card-body" style={{ textAlign: "center" }}>
                   <h5 className="card-title text-center">
@@ -115,11 +120,16 @@ class Board extends Component {
                   <p className="card-text text-center">
                     {this.state.butterQuatity}
                   </p>
-                  <button onClick={this.butterQty} className="butterButton1">
+                  <button
+                    onClick={this.butterQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
+                    className="butterButton1"
+                  >
                     Update Quantity
                   </button>
                   <button
                     onClick={this.deleteButterQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
                     className="butterButton2"
                   >
                     Delete Value
@@ -130,7 +140,12 @@ class Board extends Component {
             <div className="col col-sm-4">
               <div
                 className="card shadow  mb-3 rounded"
-                style={{ width: 300, height: 300 }}
+                style={{
+                  width: 300,
+                  height: 300,
+                  backgroundColor: mainTheme.cardbackgroundMode,
+                  color: mainTheme.fontColor,
+                }}
               >
                 <div className="card-body" style={{ textAlign: "center" }}>
                   <h5 className="card-title text-center">
@@ -143,11 +158,16 @@ class Board extends Component {
                   <p className="card-text text-center">
                     {this.state.butterPrice}
                   </p>
-                  <button onClick={this.butterPrice} className="butterButton1">
+                  <button
+                    onClick={this.butterPrice}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
+                    className="butterButton1"
+                  >
                     Update Price
                   </button>
                   <button
                     onClick={this.deleteButterPrice}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
                     className="butterButton2"
                   >
                     Delete Value
@@ -158,7 +178,12 @@ class Board extends Component {
             <div className="col col-sm-4">
               <div
                 className="card shadow  mb-3 rounded"
-                style={{ width: 300, height: 300 }}
+                style={{
+                  width: 300,
+                  height: 300,
+                  backgroundColor: mainTheme.cardbackgroundMode,
+                  color: mainTheme.fontColor,
+                }}
               >
                 <div className="card-body" style={{ textAlign: "center" }}>
                   <h5 className="card-title text-center">
@@ -173,11 +198,16 @@ class Board extends Component {
                   <p className="card-text text-center">
                     {this.state.sugarCrates}
                   </p>
-                  <button onClick={this.sugarCrates} className="butterButton1">
+                  <button
+                    onClick={this.sugarCrates}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
+                    className="butterButton1"
+                  >
                     Update Crates
                   </button>
                   <button
                     onClick={this.deleteSugarCrates}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
                     className="butterButton2"
                   >
                     Delete Value
@@ -188,12 +218,20 @@ class Board extends Component {
           </div>
         </div>
 
-        <div className="container">
+        <div
+          className="container"
+          style={{ backgroundColor: mainTheme.backgroundMode }}
+        >
           <div className="row">
             <div className="col col-sm-4">
               <div
                 className="card shadow  mb-3 rounded"
-                style={{ width: 300, height: 300 }}
+                style={{
+                  width: 300,
+                  height: 300,
+                  backgroundColor: mainTheme.cardbackgroundMode,
+                  color: mainTheme.fontColor,
+                }}
               >
                 <div className="card-body" style={{ textAlign: "center" }}>
                   <h5 className="card-title text-center">lays</h5>
@@ -202,11 +240,16 @@ class Board extends Component {
                     src="https://res.cloudinary.com/dbureb5gj/image/upload/v1590064482/dashboard/lays_cheeseburger_ml-removebg-preview_qwri4a.png"
                   ></img>
                   <p className="card-text text-center">{this.state.lays}</p>
-                  <button onClick={this.laysQty} className="butterButton1">
+                  <button
+                    onClick={this.laysQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
+                    className="butterButton1"
+                  >
                     Update Quantity
                   </button>
                   <button
                     onClick={this.deleteLaysQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
                     className="butterButton2"
                   >
                     Delete Value
@@ -217,7 +260,12 @@ class Board extends Component {
             <div className="col col-sm-4">
               <div
                 className="card shadow  mb-3 rounded"
-                style={{ width: 300, height: 300 }}
+                style={{
+                  width: 300,
+                  height: 300,
+                  backgroundColor: mainTheme.cardbackgroundMode,
+                  color: mainTheme.fontColor,
+                }}
               >
                 <div className="card-body" style={{ textAlign: "center" }}>
                   <h5 className="card-title text-center">pringles</h5>
@@ -226,11 +274,16 @@ class Board extends Component {
                     src="https://res.cloudinary.com/dbureb5gj/image/upload/v1590064475/dashboard/pringles-removebg-preview_fgygbp.png"
                   ></img>
                   <p className="card-text text-center">{this.state.pringles}</p>
-                  <button onClick={this.pringlesQty} className="butterButton1">
+                  <button
+                    onClick={this.pringlesQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
+                    className="butterButton1"
+                  >
                     Update Price
                   </button>
                   <button
                     onClick={this.deletePringlesQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
                     className="butterButton2"
                   >
                     Delete Value
@@ -241,7 +294,12 @@ class Board extends Component {
             <div className="col col-sm-4">
               <div
                 className="card shadow  mb-3 rounded"
-                style={{ width: 300, height: 300 }}
+                style={{
+                  width: 300,
+                  height: 300,
+                  backgroundColor: mainTheme.cardbackgroundMode,
+                  color: mainTheme.fontColor,
+                }}
               >
                 <div className="card-body" style={{ textAlign: "center" }}>
                   <h5 className="card-title text-center">doritos</h5>
@@ -250,11 +308,16 @@ class Board extends Component {
                     src="https://res.cloudinary.com/dbureb5gj/image/upload/v1590064462/dashboard/doritos-removebg-preview_etm2am.png"
                   ></img>
                   <p className="card-text text-center">{this.state.doritos}</p>
-                  <button onClick={this.doritosQty} className="butterButton1">
+                  <button
+                    onClick={this.doritosQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
+                    className="butterButton1"
+                  >
                     Update Crates
                   </button>
                   <button
                     onClick={this.deleteDoritosQty}
+                    style={{ backgroundColor: mainTheme.buttonMode }}
                     className="butterButton2"
                   >
                     Delete Value
