@@ -19,10 +19,19 @@ class BoardContextProvider extends Component {
       },
     };
   }
+
+  changeMode = () => {
+    this.setState({
+      brightTheme: !this.state.brightTheme,
+    });
+  };
+
   render() {
     return (
       <div>
-        <BoardContext.Provider value={{ ...this.state }}>
+        <BoardContext.Provider
+          value={{ ...this.state, changeMode: this.changeMode }}
+        >
           {this.props.children}
         </BoardContext.Provider>
       </div>
